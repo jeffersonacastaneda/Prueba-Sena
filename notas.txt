@@ -1,0 +1,14 @@
+front-end =listo
+crud =listo
+conexion bd = listo
+servidor= listo
+css = listo
+modulo invitado = listo
+
+
+
+
+falta =
+
+modulo prestamo
+modulo reportes

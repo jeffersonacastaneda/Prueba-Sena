@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar material</title>
+    <link rel="stylesheet" href="/css/style_form_general.css">
+</head>
+<body>
+    <div class="container">
+        <img src="/img/LOGO.png" alt="Descripción de la imagen" class="Imagen">
+        <br>
+        <h1>Gestionar Material</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="titulo">Titulo:</label>
+                    <input type="text" id="titulo" name="titulo" required>
+                    <span class="error-message" id="titulo-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="editorial">Editorial:</label>
+                    <input type="text" id="editorial" name="editorial" required>
+                    <span class="error-message" id="editorial-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="autor">Autor:</label>
+                    <input type="text" id="autor" name="autor" required>
+                    <span class="error-message" id="autor-error"></span>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="genero">Genero:</label>
+                    <input type="text" id="genero" name="genero" required>
+                    <span class="error-message" id="genero-error"></span>
+                </div>
+                <div class="form-group">
+                    <label for="isbn">ISBN libro:</label>
+                    <input type="text" id="isbn" name="isbn" required>
+                    <span class="error-message" id="isbn-error"></span>
+                </div>
+            </div>
+        </form>
+        <br>
+        <div class="button-container">
+            <input type="submit"  id="btn-agregar" value="Agregar" class="button"> 
+            <input type="submit" id="btn-buscar" value="Buscar" class="button"> 
+            <input type="submit" id="btn-modificar" value="Modificar" class="button"> 
+            <input type="submit" id = "btn-eliminar" value="Eliminar" class="button"> 
+    
+        </div>
+    </div>
+
+ <!-- Tabla para mostrar la información del libro -->
+ <div id="resultado-tabla-container">
+    <table id="resultado-tabla" class="tabla">
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Editorial</th>
+                <th>Autor</th>
+                <th>Genero</th>
+                <th>ISBN</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- La información del libro se insertará aquí -->
+        </tbody>
+    </table>
+</div>
+</div>
+
+
+
+
+
+
+
+      <!-- Incluye el script al final-->
+      <script src="/scripts/scripts.js" type="module" ></script>
+      <script src="/scripts/validaciones.js" type="module"></script>
+      <script src="/scripts/crud.js" type="module"></script>
+</body>
+</html>
